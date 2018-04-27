@@ -1,7 +1,8 @@
 
-# Select your environment
-- linux with docker    -> compose_golang_linux
-- windows with docker  -> compose_golang_pshell
+# What?
+Template and example methods to run golang application using docker-compose.
+ 
 
-# Sourcecode
-See `workspace`
+# Howto
+- Read all readme files in `compose_golang_xxx` 
+- Check and edit scripts `workspace/scripts`

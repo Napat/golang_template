@@ -1,16 +1,29 @@
 
-# compose up app container(only first time of the day)
+# Compose up app container(only first time of the day)
 ```
-docker-compose up
+docker-compose up -d
+```
+Note:  
+To stop and remove container
+```
+docker-compose down
 ```
 
-# Open another shell to execute the application
+# Execute the application(after compose up)
+1. Remote to app container
 ```
-# 1. remote to app container
-docker-compose exec app sh
+docker-compose exec appsample sh
+```
 
-# 2. run any cmd as you which
-pwd
-ls
+2. Setup env by using any scripts(optional)
+```
+cd /go/scripts
+./setup.sh         # optional to setup some tools i.e., git
+./gogetalllibs.sh  # optional for very first time project setup
+```
+
+3. Now env is ready! try any cmd as you which
+```
+cd /go/src/appsample
 go run main.go
 ```

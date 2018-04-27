@@ -1,9 +1,9 @@
-version: "2"
-
+version: "3"
 services:
-  app:
+  
+  appsample:
     image: golang:1.10-alpine
     volumes:
-      - ../../workspace:/go/src/workspace
-    working_dir: /go/src/workspace
+      - ../../workspace:/go
+    working_dir: /go/src/appsample
     command: sleep 28800    # 60*60*8: 8 hours 
