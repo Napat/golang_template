@@ -3,4 +3,4 @@
 docker-compose run app go run main.go
 ```
 
-Note: This method is obsolate because it slow to execute(container need to restart everytime we run the application) and it is hard to use `workspace/scripts` to init env.
+Note: This method is obsolate because it need to restart container everytime we want to execute any command and it is hard to use `workspace/scripts` to init dev environment.

@@ -1,9 +1,0 @@
-version: "3"
-services:
-  
-  appsample:
-    image: golang:1.10-alpine
-    volumes:
-      - ../../workspace:/go
-    working_dir: /go/src/appsample
-    command: sleep 28800    # 60*60*8: 8 hours 
